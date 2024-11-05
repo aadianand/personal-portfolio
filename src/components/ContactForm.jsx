@@ -12,6 +12,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
+
 const ContactForm = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6">

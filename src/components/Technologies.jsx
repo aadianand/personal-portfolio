@@ -1,10 +1,12 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
+import { SiMongodb, SiMysql, SiTailwindcss } from "react-icons/si";
+import { DiJavascript, DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { FaGitAlt } from "react-icons/fa6";
+import { IoLogoGithub } from "react-icons/io";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -44,28 +46,50 @@ const Technologies = () => {
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
+          variants={iconVariants(2.5)}
+          animate="animate"
+          initial="initial"
+        >
+          <DiJavascript className="text-7xl" style={{ color: "rgb(251, 215, 37)" }} />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2.5)}
+          animate="animate"
+          initial="initial"
+        >
+          <SiTailwindcss className="text-7xl" style={{ color: "rgb(56, 189, 248)" }} />
+        </motion.div>
+        {/* <motion.div
           variants={iconVariants(3)}
           animate="animate"
           initial="initial"
           className="p-4"
         >
           <TbBrandNextjs className="text-7xl" />
-        </motion.div>
+        </motion.div> */}
         <motion.div
           variants={iconVariants(5)}
           animate="animate"
           initial="initial"
           className="p-4"
         >
-          <SiMongodb className="text-7xl text-cyan-500" />
+          <SiMongodb className="text-7xl" style={{ color: "rgb(0, 237, 100)" }} />
         </motion.div>
-        <motion.div
+        {/* <motion.div
           variants={iconVariants(2)}
           animate="animate"
           initial="initial"
           className="p-4"
         >
           <DiRedis className="text-7xl text-red-700" />
+        </motion.div> */}
+        <motion.div
+          variants={iconVariants(6)}
+          animate="animate"
+          initial="initial"
+          className="p-4"
+        >
+          <FaNodeJs className="text-7xl" style={{ color: "rgb(95, 160, 78)" }} />
         </motion.div>
         <motion.div
           variants={iconVariants(6)}
@@ -73,7 +97,23 @@ const Technologies = () => {
           initial="initial"
           className="p-4"
         >
-          <FaNodeJs className="text-7xl text-green-500" />
+          <FaGitAlt className="text-7xl" style={{ color: "rgb(240, 80, 51)" }} />
+        </motion.div>
+        {/* <motion.div
+          variants={iconVariants(4)}
+          animate="animate"
+          initial="initial"
+          className="p-4"
+        >
+          <BiLogoPostgresql className="text-7xl text-sky-500" />
+        </motion.div> */}
+        <motion.div
+          variants={iconVariants(4)}
+          animate="animate"
+          initial="initial"
+          className="p-4"
+        >
+          <SiMysql className="text-7xl"  style={{ color: "rgb(0, 117, 143)" }}/>
         </motion.div>
         <motion.div
           variants={iconVariants(4)}
@@ -81,7 +121,7 @@ const Technologies = () => {
           initial="initial"
           className="p-4"
         >
-          <BiLogoPostgresql className="text-7xl text-sky-500" />
+          <IoLogoGithub className="text-7xl"/>
         </motion.div>
       </motion.div>
     </div>
